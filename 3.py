@@ -15,10 +15,15 @@ while count<=100:
 	if count=="40":
 		count=68
 		print("you club the ladder",count)
-	elif count=="76":
+	elif count=="52":
+		count=81
+		print("you club the ladder",count)
+	if count=="76":
 		count=97
 		print("you club the ladder",count)
-	if count=="11":
-		count=2
+	elif count=="38":
+		count=9
 		print("down the ladder",count)
-
+	if count=="25":
+		count=4
+		print("down the ladder",count)
