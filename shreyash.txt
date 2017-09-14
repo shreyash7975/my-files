@@ -1,0 +1,15 @@
+whate we learnt today
+1.we learnt abount different modules in hardwarware and software
+2.about userinterfaces,graphic interfaces
+3.artificial intelligence
+4.how to differentiate function in a program to modules in a program
+
+programs
+using python to send email
+the link i used was
+www.pythonforbeginners.com/code-snippets-source.../using-python-to-send-email
+and i had to change the to address and login parameters
+and had to give acccount preferences in my gmail to "less secure apps" 
+ r
+
+
