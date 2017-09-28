@@ -6,9 +6,13 @@ while count<=100:
 	roll=input("press r to roll the dice")
 	if roll=="r":
 		r=random.randint(1,6)
+#r is the random number chosen by the system 
 		count=count+r
+#this is to add the count each time the dice or the pawn is moved
 		print("your random num is",r)
+#displays the random number 
 		print("you are on count",count)
+#displays the count and keeps  
 	elif count==8:
 		count=37
 		print("you climb the ladder",count)
