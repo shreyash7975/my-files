@@ -12,7 +12,7 @@ while count<=100:
 		print("your random num is",r)
 #displays the random number 
 		print("you are on count",count)
-#displays the count and keeps  
+#displays the count and keeps track of the count  
 	elif count==8:
 		count=37
 		print("you climb the ladder",count)
@@ -49,6 +49,7 @@ while count<=100:
 	if count>=100:
 		count=100
 		print("congrats you are always the winnner",count) 
+#prints the results
 		
 
 
