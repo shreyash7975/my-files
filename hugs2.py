@@ -1,52 +1,31 @@
-#!/usr/bin/python3
-import random
-n=(int(input("press 7 to play")))
-i=0
-j=0
-while(n==7):
-    t=["Rock","Paper","Scissors"]
-    Computer=t[random.randint(0,2)]
-    print("Enter your Choice:-")
-    Player="False"
-    Player=input("Rock, Paper, Scissors")
-    if(Computer==Player):
+#!/usr/bin/python3.6
+from random import randint
+ 
+ 
+t = ["Rock", "Paper", "Scissors"]
+ 
+computer = t[randint(0,2)]
+ 
+player = False
+ 
+while player == False:
+    player = input("Rock, Paper, Scissors?")
+    if player == computer:
         print("Tie!")
-    elif(Computer=="Rock"):
-        if(Player=="Paper"):
-            print("The computer played: ",Computer)
-            print("The Player played: ",Player)
-            print("The Paper Wraps the Stone!")
-            print("Player Wins!")
-            i=i+1
+    elif player == "Rock":
+        if computer == "Paper":
+            print("You lose!", computer, "covers", player)
         else:
-            print("Computer Wins")
-            j=j+1
-    elif(Computer=="Paper"):
-        if(Player=="Scissors"):
-            print("The computer played: ",Computer)
-            print("The Player played: ",Player)
-            print("The Scissors Cuts Paper!")
-            print("Player Wins!")
-            i=i+1
+            print("You win!", player, "smashes", computer)
+    elif player == "Paper":
+        if computer == "Scissors":
+            print("You lose!", computer, "cut", player)
         else:
-            print("Computer Wins")
-
-            j=j+1
-    elif(Computer=="Scissors"):
-        if(Player=="Rock"):
-            print("The computer played: ",Computer)
-            print("The Player played: ",Player)
-            print("Rock Breaks the Scissors")
-            print("Player Wins!")
-            i=i+1
+            print("You win!", player, "covers", computer)
+    elif player == "Scissors":
+        if computer == "Rock":
+            print("You lose...", computer, "smashes", player)
         else:
-            print("Computer Wins")
-            j=j+1
+            print("You win!", player, "cut", computer)
     else:
-        print("Enter Choice again")
-    if(i>j):
-        print("Player leads by ",i-j)
-    elif(i==j):
-        print("The Scores are tied ")
-    else:
-        print("Computer leads by ",j-i)
+        print("That's not a valid play. Check your spelling!")
